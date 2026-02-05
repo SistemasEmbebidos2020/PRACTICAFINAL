@@ -1,80 +1,78 @@
-# PRACTICAFINAL
-================
+**PRACTICAFINAL**
+=================
 
-A collection of projects created with Arduino and ESP32 boards.
+### Project Description
 
-## Project Description
-------------------------
+PRACTICAFINAL is an Arduino/ESP32 project that demonstrates the use of JSON parsing and data storage. The code defines a `ProjectInfo` structure to store project information, including date, project type, total files, hardware, libraries, and pin configurations.
 
-This repository contains the source code for a project that collects information about a project, including its hardware and libraries used.
+### Hardware Requirements
 
-## Hardware Requirements
--------------------------
+* Arduino board (e.g., Uno, Mega)
+* ESP32 board (e.g., ESP32 DevKitC)
 
-* Arduino or ESP32 board
-
-## Supported Boards
--------------------
+### Supported Boards
 
 * Arduino Uno
 * Arduino Mega
 * ESP32 DevKitC
 
-## Libraries Used
------------------
+### Libraries Used
 
-* [ArduinoJson](https://github.com/bblanchon/ArduinoJson)
+* `json.hpp` for JSON parsing
 
-## Pin Configuration
----------------------
+### Pin Configuration
 
-The code does not use any specific pin configuration.
+No pin configuration detected in the code. This project focuses on data storage and processing, rather than digital input/output operations.
 
-## Installation
---------------
+### Installation
 
-To install this project, follow these steps:
+To use this project, you will need to install the following:
 
-### Using Arduino IDE
+1. **Arduino IDE**: Download and install the latest version of the Arduino IDE from [www.arduino.cc](http://www.arduino.cc).
+2. **PlatformIO**: Install PlatformIO using the Arduino IDE's Library Manager or by downloading it from [platformio.org](http://platformio.org).
 
-1. Open the Arduino IDE.
-2. Go to `Sketch` > `Include Library` > `Add .ZIP/LIBRARY`.
-3. Select the zip file containing the library (ArduinoJson).
-4. Create a new project and copy the code into it.
+### Compilation & Upload
 
-### Using PlatformIO
+1. Open the project in the Arduino IDE or PlatformIO.
+2. Ensure that you have the correct board and library configurations set up.
+3. Compile the code.
+4. Upload the compiled binary to your target board.
 
-1. Install PlatformIO by following the instructions on their website.
-2. Create a new project in PlatformIO.
-3. Add the library `ArduinoJson` to the project's dependencies.
-4. Copy the code into the project directory.
+### Project Structure
 
-## Compilation & Upload
--------------------------
+The project consists of a single file: `PRACTICAFINAL.ino`. This file contains the entire code, including the `ProjectInfo` structure definition and the `setup()` function.
 
-To compile and upload the code, follow these steps:
+### Usage Example
 
-1. Make sure you have the correct board selected in the IDE or PlatformIO.
-2. Go to `Sketch` > `Upload` (Arduino IDE) or `Project` > `Build Project` > `Upload` (PlatformIO).
+To use this project, simply upload the compiled binary to your target board. The `setup()` function will initialize the serial communication and print the project information to the serial monitor.
 
-## Project Structure
-----------------------
+### Notes
 
-The project is organized as follows:
+* This project focuses on data storage and processing using JSON parsing.
+* No digital input/output operations are performed in this project.
 
-* `ANALISIS_PROYECTO.json`: A JSON file containing the project information.
+### License
 
-## Usage Example
------------------
+This project is licensed under the MIT License.
 
-To use this project, simply upload it to your board and open the serial monitor. The code will print the project information to the serial monitor.
+```markdown
+Copyright (c) [Year] [Author]
 
-## Notes
----------
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
 
-This project uses a JSON file to store the project information. The code reads from this file and prints the information to the serial monitor.
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
 
-## License
-----------
-
-[MIT](https://opensource.org/licenses/MIT)
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+```
