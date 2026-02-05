@@ -4,6 +4,17 @@
 
 // Comentario de encabezado explicando el proyecto
 // Proyecto para controlar un motor con un potenciómetro y mostrar en una pantalla OLED.
+/*
+**Pines GPIO del ESP32**
+
+*   VCC: 3.3V
+*   GND: GND
+*   RXD0 (GPIO 16): No se utiliza en este ejemplo
+*   TXD0 (GPIO 17): No se utiliza en este ejemplo
+*   SCL (GPIO 5): I2C Clock
+*   SDA (GPIO 4): I2C Data
+
+*/
 
 int potPin = A0; // Pin analógico donde está conectado el potenciómetro
 int motorPin = 9; // Pin de control del motor (por ejemplo, si estás usando un L298N)
@@ -76,20 +87,3 @@ void loop() {
     display.display();
 
 }
-
-**Pines GPIO del ESP32**
-
-*   VCC: 3.3V
-*   GND: GND
-*   RXD0 (GPIO 16): No se utiliza en este ejemplo
-*   TXD0 (GPIO 17): No se utiliza en este ejemplo
-*   SCL (GPIO 5): I2C Clock
-*   SDA (GPIO 4): I2C Data
-
-**Configuración WiFi/Bluetooth**
-
-No se incluye en este ejemplo, pero se puede agregar según sea necesario.
-
-**Memoria SPIFFS**
-
-Si no se utiliza, se puede comentar la línea que inicializa la memoria SPIFFS.
