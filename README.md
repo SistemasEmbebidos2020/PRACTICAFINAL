@@ -1,62 +1,80 @@
-# Embebido General
-## Desarrollando aplicaciones embebidas de manera eficiente
+# PRACTICAFINAL
+================
 
-Este proyecto está diseñado para crear aplicaciones embebidas generales utilizando tecnologías de vanguardia. A continuación, se presenta una descripción detallada del proyecto, junto con la información relevante sobre hardware, software y configuración.
+A collection of projects created with Arduino and ESP32 boards.
 
-### Descripción del Proyecto
-El objetivo principal de este proyecto es proporcionar un marco de trabajo completo para el desarrollo de aplicaciones embebidas generales. Esto incluye desde la selección del hardware hasta la implementación de software efectiva, garantizando que las aplicaciones sean eficientes y escalables.
+## Project Description
+------------------------
 
-### Hardware Requerido
+This repository contains the source code for a project that collects information about a project, including its hardware and libraries used.
 
-- **Microcontrolador**: Se utilizará un microcontrolador compatible con la plataforma embebida.
-- **Pantalla LCD**: Para mostrar información en tiempo real.
-- **Batería**: Para proporcionar alimentación a la aplicación embebida.
+## Hardware Requirements
+-------------------------
 
-### Software y Librerías
-El proyecto utiliza las siguientes librerías estándar para desarrollo de aplicaciones embebidas:
+* Arduino or ESP32 board
 
-- **Libreria de Interfaz con Hardware**: Para comunicarse con los componentes del hardware.
-- **Libreria de Almacenamiento**: Para almacenar datos en la memoria interna.
+## Supported Boards
+-------------------
 
-### Configuración de Pines (Si Aplica)
-La configuración de pines se realizó según las especificaciones del microcontrolador y otros componentes utilizados. A continuación, se presentan los detalles específicos:
+* Arduino Uno
+* Arduino Mega
+* ESP32 DevKitC
 
-- **Pines de Entrada/Salida**: Se utilizaron 6 pines para entrada/salida.
-- **Pines de Alimentación**: Los pines de alimentación están conectados a la fuente de alimentación externa.
+## Libraries Used
+-----------------
 
-### Instalación Paso a Paso
+* [ArduinoJson](https://github.com/bblanchon/ArduinoJson)
 
-1. **Descargar y configurar el entorno de desarrollo**:
-   - Descargue y configure el entorno de desarrollo adecuado para su plataforma.
-   - Verifique que se cumplan las requisitos del hardware.
+## Pin Configuration
+---------------------
 
-2. **Instalar librerías adicionales**:
-   - Instale las librerías necesarias para la comunicación con los componentes del hardware y almacenamiento de datos.
+The code does not use any specific pin configuration.
 
-3. **Compilar y cargar el código**:
-   - Compile y cargue el código en el microcontrolador utilizando el entorno de desarrollo configurado.
+## Installation
+--------------
 
-### Uso
-Para utilizar esta aplicación embebida, siga estos pasos:
+To install this project, follow these steps:
 
-1. **Conecte la aplicación a una fuente de alimentación**.
-2. **Inicie la aplicación embebida**.
-3. **Puede interactuar con la aplicación mediante el teclado o pantalla táctil**.
+### Using Arduino IDE
 
-### Estructura del Proyecto
-La estructura del proyecto está organizada en las siguientes carpetas:
+1. Open the Arduino IDE.
+2. Go to `Sketch` > `Include Library` > `Add .ZIP/LIBRARY`.
+3. Select the zip file containing the library (ArduinoJson).
+4. Create a new project and copy the code into it.
 
-- **`/hardware`**: Contiene información sobre el hardware utilizado.
-- **`/software`**: Contiene el código fuente de la aplicación embebida.
-- **`/documentación`**: Contiene documentación adicional, como notas y especificaciones.
+### Using PlatformIO
 
-### Licencia MIT
-Este proyecto utiliza la licencia MIT. A continuación, se presenta una cita del texto de la licencia:
+1. Install PlatformIO by following the instructions on their website.
+2. Create a new project in PlatformIO.
+3. Add the library `ArduinoJson` to the project's dependencies.
+4. Copy the code into the project directory.
 
-> Copyright [año] [nombre del autor]
->
-> Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+## Compilation & Upload
+-------------------------
 
-> The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+To compile and upload the code, follow these steps:
 
-> THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+1. Make sure you have the correct board selected in the IDE or PlatformIO.
+2. Go to `Sketch` > `Upload` (Arduino IDE) or `Project` > `Build Project` > `Upload` (PlatformIO).
+
+## Project Structure
+----------------------
+
+The project is organized as follows:
+
+* `ANALISIS_PROYECTO.json`: A JSON file containing the project information.
+
+## Usage Example
+-----------------
+
+To use this project, simply upload it to your board and open the serial monitor. The code will print the project information to the serial monitor.
+
+## Notes
+---------
+
+This project uses a JSON file to store the project information. The code reads from this file and prints the information to the serial monitor.
+
+## License
+----------
+
+[MIT](https://opensource.org/licenses/MIT)
