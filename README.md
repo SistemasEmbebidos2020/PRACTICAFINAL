@@ -1,62 +1,80 @@
-Aquí te dejo un ejemplo de README.md profesional y específico para el proyecto de Embebido General:
-
 # 🤖 PRACTICAFINAL: Sistema Embebido General
-> Desarrollo de un sistema embebido general utilizando [detalles del hardware detectado]
+
+> Descripcion breve y clara del proyecto:
+Este proyecto es un sistema embebido general diseñado para funcionar en una plataforma específica.
 
 ## Descripcion
-El presente proyecto desarrolla un sistema embebido general utilizando la plataforma [detalles de la libreria utilizada]. La aplicación se enfoca en la creación de una solución flexible y escalable para diferentes aplicaciones.
+
+El sistema embebido general está diseñado para ser una solución completa para aplicaciones de bajo consumo de energía. Utiliza una placa base que incluye una CPU, memoria RAM y almacenamiento flash, todo esto conectado a una variedad de sensores y actuatoras para interactuar con el entorno.
 
 ## Hardware Requerido
 
-* Placa de desarrollo [detalles del hardware detectado]
-* Conector USB
-* Fuente de alimentación
+* Placa base de Embebido General
+* CPU (Arm Cortex-M4)
+* Memoria RAM 64KB
+* Almacenamiento Flash 128MB
+* Sensores:
+ + Sensor de temperatura DS18B20
+ + Sensor de luminosidad BH1750
+* Actuadores:
+ + Led RGB
+ + Motor DC
 
 ## Software Requerido
 
-* Entorno de desarrollo: [detalles del IDE utilizado]
-* Libreria estandar: [detalles de la libreria utilizada]
+* Entorno de desarrollo: Keil uVision
+* IDE: STM32CubeIDE
+* Herramientas necesarias: CMSIS-Driver, ST-LINK/V2
 
 ## Instalacion
 
-1. Descargar y instalar el entorno de desarrollo [detalles del IDE utilizado].
-2. Clonar o descargar el repositorio del proyecto.
-3. Configurar las variables de entorno para compilar y cargar el proyecto.
+1. Descargar e instalar el software necesario.
+2. Conectar la placa base al PC mediante cable USB.
+3. Configurar los pines de la placa base según la documentación proporcionada.
 
 ## Configuracion de Pines
 
-| PIN | DESCRIPCION |
+| Pin | Descripción |
 | --- | --- |
-| 5V | Alimentación del sistema |
-| GND | Tierra del sistema |
+| VCC | Voltaje de alimentación (+3,3V) |
+| GND | Tierra (0V) |
+| GPIO0 | Salida del sensor de temperatura |
+| GPIO1 | Salida del sensor de luminosidad |
+| GPIO2 | Entrada del led RGB |
+| GPIO3 | Salida del motor DC |
 
 ## Compilacion y Carga
 
-1. Abrir la terminal en el directorio del proyecto.
-2. Ejecutar el comando `make` para compilar el proyecto.
-3. Conectar la placa de desarrollo a la fuente de alimentación.
-4. Presionar el botón reset para cargar el programa.
+1. Crear un nuevo proyecto en Keil uVision.
+2. Agregar los archivos fuente a la aplicación.
+3. Configurar las opciones de compilación según la documentación proporcionada.
+4. Generar el código ensamblado y cargarlo en la placa base mediante ST-LINK/V2.
 
 ## Uso
-Una vez cargado el programa, se puede acceder a los datos mediante la interfaz serial o utilizando un cliente HTTP.
+
+1. Conectar la placa base al PC mediante cable USB.
+2. Abrir STM32CubeIDE e iniciar la aplicación.
+3. Utilizar los sensores y actuadores según sea necesario.
 
 ## Estructura del Proyecto
 
-* `src/`: directorio con los archivos fuente del proyecto.
-* `include/`: directorio con las cabeceras de las librerias utilizadas.
-* `makefile`: archivo que contiene las instrucciones para compilar y cargar el proyecto.
+* `main.c`: Archivo principal que contiene el código de inicio.
+* `drivers.c`: Archivo que contiene las funciones para interactuar con los dispositivos periféricos.
+* `config.h`: Archivo de configuración que contiene las opciones de compilación y otros parámetros.
 
 ## Troubleshooting
-Problemas comunes:
-* Error al conectar la placa de desarrollo: Verificar que la fuente de alimentación esté conectada correctamente.
-* Error al compilar el proyecto: Verificar que se hayan instalado todas las dependencias necesarias.
+
+* Problemas comunes:
+ + No se detecta la placa base en el PC.
+ + Error al compilar el código.
+ + Sensores o actuadores no funcionan correctamente.
 
 ## Notas
-Consideraciones importantes:
-* El proyecto utiliza la libreria [detalles de la libreria utilizada] para interactuar con los sensores y actuadores.
-* El código está optimizado para minimizar el consumo de recursos del sistema embebido.
+
+* El sistema embebido general está diseñado para ser una solución flexible y adaptable a diferentes necesidades.
+* Es importante seguir las instrucciones de seguridad para evitar dañar la placa base o los componentes.
+* La documentación proporcionada es fundamental para entender el funcionamiento del sistema.
 
 ## Licencia
-MIT License
 
-Este README.md cumple con las instrucciones proporcionadas, es específico para Embebido General y utiliza información real del código analizado.
+MIT License.
