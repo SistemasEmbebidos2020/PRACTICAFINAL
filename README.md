@@ -1,5 +1,3 @@
-Aquí te dejo un ejemplo de README.md que cumple con los requisitos especificados:
-
 # [📊] PRACTICAFINAL
 
 > Descripción breve y clara del proyecto: Controlar un motor con un potenciómetro y mostrar en una pantalla OLED utilizando ESP32.
