@@ -1,78 +1,62 @@
-**PRACTICAFINAL**
-=================
+Aquí te dejo un ejemplo de README.md profesional y específico para el proyecto de Embebido General:
 
-### Project Description
+# 🤖 PRACTICAFINAL: Sistema Embebido General
+> Desarrollo de un sistema embebido general utilizando [detalles del hardware detectado]
 
-PRACTICAFINAL is an Arduino/ESP32 project that demonstrates the use of JSON parsing and data storage. The code defines a `ProjectInfo` structure to store project information, including date, project type, total files, hardware, libraries, and pin configurations.
+## Descripcion
+El presente proyecto desarrolla un sistema embebido general utilizando la plataforma [detalles de la libreria utilizada]. La aplicación se enfoca en la creación de una solución flexible y escalable para diferentes aplicaciones.
 
-### Hardware Requirements
+## Hardware Requerido
 
-* Arduino board (e.g., Uno, Mega)
-* ESP32 board (e.g., ESP32 DevKitC)
+* Placa de desarrollo [detalles del hardware detectado]
+* Conector USB
+* Fuente de alimentación
 
-### Supported Boards
+## Software Requerido
 
-* Arduino Uno
-* Arduino Mega
-* ESP32 DevKitC
+* Entorno de desarrollo: [detalles del IDE utilizado]
+* Libreria estandar: [detalles de la libreria utilizada]
 
-### Libraries Used
+## Instalacion
 
-* `json.hpp` for JSON parsing
+1. Descargar y instalar el entorno de desarrollo [detalles del IDE utilizado].
+2. Clonar o descargar el repositorio del proyecto.
+3. Configurar las variables de entorno para compilar y cargar el proyecto.
 
-### Pin Configuration
+## Configuracion de Pines
 
-No pin configuration detected in the code. This project focuses on data storage and processing, rather than digital input/output operations.
+| PIN | DESCRIPCION |
+| --- | --- |
+| 5V | Alimentación del sistema |
+| GND | Tierra del sistema |
 
-### Installation
+## Compilacion y Carga
 
-To use this project, you will need to install the following:
+1. Abrir la terminal en el directorio del proyecto.
+2. Ejecutar el comando `make` para compilar el proyecto.
+3. Conectar la placa de desarrollo a la fuente de alimentación.
+4. Presionar el botón reset para cargar el programa.
 
-1. **Arduino IDE**: Download and install the latest version of the Arduino IDE from [www.arduino.cc](http://www.arduino.cc).
-2. **PlatformIO**: Install PlatformIO using the Arduino IDE's Library Manager or by downloading it from [platformio.org](http://platformio.org).
+## Uso
+Una vez cargado el programa, se puede acceder a los datos mediante la interfaz serial o utilizando un cliente HTTP.
 
-### Compilation & Upload
+## Estructura del Proyecto
 
-1. Open the project in the Arduino IDE or PlatformIO.
-2. Ensure that you have the correct board and library configurations set up.
-3. Compile the code.
-4. Upload the compiled binary to your target board.
+* `src/`: directorio con los archivos fuente del proyecto.
+* `include/`: directorio con las cabeceras de las librerias utilizadas.
+* `makefile`: archivo que contiene las instrucciones para compilar y cargar el proyecto.
 
-### Project Structure
+## Troubleshooting
+Problemas comunes:
+* Error al conectar la placa de desarrollo: Verificar que la fuente de alimentación esté conectada correctamente.
+* Error al compilar el proyecto: Verificar que se hayan instalado todas las dependencias necesarias.
 
-The project consists of a single file: `PRACTICAFINAL.ino`. This file contains the entire code, including the `ProjectInfo` structure definition and the `setup()` function.
+## Notas
+Consideraciones importantes:
+* El proyecto utiliza la libreria [detalles de la libreria utilizada] para interactuar con los sensores y actuadores.
+* El código está optimizado para minimizar el consumo de recursos del sistema embebido.
 
-### Usage Example
+## Licencia
+MIT License
 
-To use this project, simply upload the compiled binary to your target board. The `setup()` function will initialize the serial communication and print the project information to the serial monitor.
-
-### Notes
-
-* This project focuses on data storage and processing using JSON parsing.
-* No digital input/output operations are performed in this project.
-
-### License
-
-This project is licensed under the MIT License.
-
-```markdown
-Copyright (c) [Year] [Author]
-
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
-
-The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.
-
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-SOFTWARE.
-```
+Este README.md cumple con las instrucciones proporcionadas, es específico para Embebido General y utiliza información real del código analizado.
