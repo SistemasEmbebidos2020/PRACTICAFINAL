@@ -1,8 +1,17 @@
 {
-  "fecha": "2026-02-05T12:58:32.506338",
-  "tipo_proyecto": "Embebido General",
-  "total_archivos": 0,
-  "hardware": [],
-  "librerias": [],
+  "fecha": "2026-02-05T13:10:09.388446",
+  "tipo_proyecto": "ESP32",
+  "total_archivos": 2,
+  "hardware": [
+    "esp32",
+    "pic",
+    "arduino",
+    "raspberry_pi"
+  ],
+  "librerias": [
+    "Adafruit_SSD1306.h",
+    "Wire.h",
+    "Adafruit_GFX.h"
+  ],
   "pines": {}
 }

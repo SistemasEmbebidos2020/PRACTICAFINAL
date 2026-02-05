@@ -1,80 +1,75 @@
-# 🤖 PRACTICAFINAL: Sistema Embebido General
+Aquí te dejo un ejemplo de README.md que cumple con los requisitos especificados:
 
-> Descripcion breve y clara del proyecto:
-Este proyecto es un sistema embebido general diseñado para funcionar en una plataforma específica.
+# [📊] PRACTICAFINAL
+
+> Descripción breve y clara del proyecto: Controlar un motor con un potenciómetro y mostrar en una pantalla OLED utilizando ESP32.
 
 ## Descripcion
 
-El sistema embebido general está diseñado para ser una solución completa para aplicaciones de bajo consumo de energía. Utiliza una placa base que incluye una CPU, memoria RAM y almacenamiento flash, todo esto conectado a una variedad de sensores y actuatoras para interactuar con el entorno.
+Explicación detallada de que hace el proyecto. El objetivo principal es controlar el movimiento de un motor mediante la lectura de valores de un potenciómetro conectado a un pin analógico del ESP32, y mostrar estos valores en una pantalla OLED utilizando las bibliotecas Adafruit_SSD1306 y Adafruit_GFX.
 
 ## Hardware Requerido
 
-* Placa base de Embebido General
-* CPU (Arm Cortex-M4)
-* Memoria RAM 64KB
-* Almacenamiento Flash 128MB
-* Sensores:
- + Sensor de temperatura DS18B20
- + Sensor de luminosidad BH1750
-* Actuadores:
- + Led RGB
- + Motor DC
+* ESP32-WROOM (o modelo específico equivalente)
+* Potenciómetro
+* Motor DC (con L298N o similar)
+* Pantalla OLED (Adafruit 1.44" I2C/OLED)
+* Conexiones: GND, VCC, SCL, SDA
 
 ## Software Requerido
 
-* Entorno de desarrollo: Keil uVision
-* IDE: STM32CubeIDE
-* Herramientas necesarias: CMSIS-Driver, ST-LINK/V2
+* Plataforma: Arduino IDE (versión específica)
+* Board Package: ESP32 Board Package (versión específica)
+* Librerias necesarias:
+ + Adafruit_SSD1306.h
+ + Wire.h
+ + Adafruit_GFX.h
+* Configuración de Board Manager: Verificar que el paquete de soporte para ESP32 esté instalado y configurado correctamente.
 
 ## Instalacion
 
-1. Descargar e instalar el software necesario.
-2. Conectar la placa base al PC mediante cable USB.
-3. Configurar los pines de la placa base según la documentación proporcionada.
+1. Descargar e instalar Arduino IDE.
+2. Agregar soporte para ESP32 mediante el menú `Sketch` > `Include Library` > `Manage Libraries`.
+3. Instalar librerias necesarias: `Adafruit_SSD1306`, `Wire`, y `Adafruit_GFX`.
+4. Seleccionar board correcto: `ESP32 Dev Module (WROOM)` o similar.
+5. Configurar puerto serial.
 
 ## Configuracion de Pines
 
 | Pin | Descripción |
 | --- | --- |
-| VCC | Voltaje de alimentación (+3,3V) |
-| GND | Tierra (0V) |
-| GPIO0 | Salida del sensor de temperatura |
-| GPIO1 | Salida del sensor de luminosidad |
-| GPIO2 | Entrada del led RGB |
-| GPIO3 | Salida del motor DC |
+| A0  | Potenciómetro |
+| D9  | Motor DC |
 
 ## Compilacion y Carga
 
-1. Crear un nuevo proyecto en Keil uVision.
-2. Agregar los archivos fuente a la aplicación.
-3. Configurar las opciones de compilación según la documentación proporcionada.
-4. Generar el código ensamblado y cargarlo en la placa base mediante ST-LINK/V2.
+* Board: `ESP32 Dev Module (WROOM)`
+* Upload Speed: `921600`
+* Flash Size: `4MB`
+* Partition Scheme: `Default`
 
 ## Uso
 
-1. Conectar la placa base al PC mediante cable USB.
-2. Abrir STM32CubeIDE e iniciar la aplicación.
-3. Utilizar los sensores y actuadores según sea necesario.
+1. Abrir Serial Monitor (115200 baud).
+2. Conectar a WiFi mostrado en la pantalla OLED.
+3. Acceder via IP o Bluetooth.
 
 ## Estructura del Proyecto
 
-* `main.c`: Archivo principal que contiene el código de inicio.
-* `drivers.c`: Archivo que contiene las funciones para interactuar con los dispositivos periféricos.
-* `config.h`: Archivo de configuración que contiene las opciones de compilación y otros parámetros.
+* `ARDUINO.cpp`: Código principal para ESP32.
+* `ESP32.cpp`: Archivo auxiliar para ESP32.
 
 ## Troubleshooting
 
-* Problemas comunes:
- + No se detecta la placa base en el PC.
- + Error al compilar el código.
- + Sensores o actuadores no funcionan correctamente.
+* Problema de puerto serial: Verificar que el paquete de soporte para ESP32 esté instalado y configurado correctamente.
+* Error de compilación por librerias: Verificar que las librerias necesarias estén instaladas y configuradas correctamente.
+* No conecta a WiFi: Verificar la configuración de WiFi y redes locales.
 
 ## Notas
 
-* El sistema embebido general está diseñado para ser una solución flexible y adaptable a diferentes necesidades.
-* Es importante seguir las instrucciones de seguridad para evitar dañar la placa base o los componentes.
-* La documentación proporcionada es fundamental para entender el funcionamiento del sistema.
+* Este proyecto es para ESP32, no se debe utilizar en otras plataformas.
+* La pantalla OLED puede variar según el modelo utilizado.
 
 ## Licencia
 
-MIT License.
+MIT License
