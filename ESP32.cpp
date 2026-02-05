@@ -83,5 +83,3 @@ void loop() {
   // Muestra un mensaje de bienvenida en la pantalla OLED
   showWelcomeMessage();
 }
-
-NOTA: El código anterior es una versión mejorada del código original, con comentarios y documentación agregados. También se han incluido algunos cambios menores para mejorar la claridad y la seguridad.
